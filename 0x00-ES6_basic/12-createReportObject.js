@@ -4,7 +4,7 @@ export default function createReportObject(employeesList) {
     getNumberofDepartments(employeesList) {
       let total = 0;
       for (const deparment in employeesList) {
-        if (deparment) total += 1;
+        if (employeesList.hasOwnProperty(deparment)) total += 1;
       }
       return total;
     },
