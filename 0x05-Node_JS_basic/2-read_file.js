@@ -1,6 +1,4 @@
-#!/usr/bin/env node
-// Read file synchronously
-const fs = require('node:fs');
+const fs = require('fs');
 
 function countStudents(path) {
   try {
