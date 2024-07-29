@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-// complex express server
 const fs = require('fs');
 
 function countStudents(path) {

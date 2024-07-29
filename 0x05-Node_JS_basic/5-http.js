@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // complex http server
 const { createServer } = require('node:http');
-const fs = require('node:fs');
+const fs = require('fs');
 
 function countStudents(path) {
   return new Promise((resolve, reject) => {
