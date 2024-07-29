@@ -52,7 +52,7 @@ app.get('/students', (req, res) => {
   countStudents(path).then((mess) => {
     res.send(rootMess + mess);
   }).catch((err) => {
-    res.send(rootMess + err);
+    res.send(rootMess + err.message);
   });
 });
 

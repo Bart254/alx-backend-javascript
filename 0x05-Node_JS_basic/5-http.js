@@ -49,7 +49,7 @@ const app = createServer((req, resp) => {
       countStudents(path).then((mess) => {
         resp.end(rootMess + mess);
       }).catch((err) => {
-        resp.end(rootMess + err);
+        resp.end(rootMess + err.message);
       });
       break;
     default:
