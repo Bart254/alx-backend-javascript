@@ -1,6 +1,4 @@
-#!/usr/bin/env node
-// complex http server
-const { createServer } = require('node:http');
+const { createServer } = require('http');
 const fs = require('fs');
 
 function countStudents(path) {
