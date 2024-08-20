@@ -8,3 +8,5 @@ app.use(route);
 app.listen(1245, 'localhost', () => {
   console.log('webapp @localhost:1245');
 });
+
+export default app;
