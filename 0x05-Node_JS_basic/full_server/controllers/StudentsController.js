@@ -18,7 +18,7 @@ export default class StudentsController {
       response.end(`${firstLine}\n${mess.join('\n')}`);
     }).catch((err) => {
       response.status(500);
-      response.send(`${firstLine}\nCannot load the database`);
+      response.send('Cannot load the database');
     });
   }
 
