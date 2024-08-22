@@ -9,6 +9,6 @@ describe('test promises', () => {
 		getPaymentTokenFromAPI(true).then( resp => {
 			expect(resp).to.deep.equal(response);
 			done();
-		});
+		}).catch(err => done(err));
 	});
 });
