@@ -11,4 +11,8 @@ describe('test promises', () => {
 			done();
 		}).catch(err => done(err));
 	});
+
+	it('function should do nothing when success is false', () => {
+		expect(getPaymentTokenFromAPI(false)).to.equal(undefined);
+	});
 });
