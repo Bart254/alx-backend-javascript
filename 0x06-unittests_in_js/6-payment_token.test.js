@@ -1,5 +1,4 @@
 const getPaymentTokenFromAPI = require('./6-payment_token');
-const sinon = require('sinon');
 const { expect } = require('chai');
 
 describe('test promises', () => {
