@@ -2,7 +2,7 @@ const getPaymentTokenFromAPI = require('./6-payment_token');
 const { expect } = require('chai');
 
 describe('test promises', () => {
-	it('test result of getPaymentTokenFromAPI(true)', () => {
+	it('test result of getPaymentTokenFromAPI(true)', (done) => {
 		const response = {data: 'Successful response from the API'};
 
 		getPaymentTokenFromAPI(true).then( resp => {
